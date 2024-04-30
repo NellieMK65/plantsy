@@ -1,15 +1,11 @@
 import PlantCard from './PlantCard';
 
-function PlantList() {
+function PlantList({ plants }) {
 	return (
 		<div className="grid grid-cols-4 gap-4 my-10">
-			<PlantCard />
-
-			<PlantCard />
-
-			<PlantCard />
-
-			<PlantCard />
+			{plants.map((plant) => (
+				<PlantCard key={plant.id} {...plant} />
+			))}
 		</div>
 	);
 }
