@@ -1,5 +1,18 @@
+import AddPlant from './components/AddPlant';
+import Logo from './components/Logo';
+import PlantList from './components/PlantList';
+import SearchPlant from './components/SearchPlant';
+
+// declarative
 function App() {
-	return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+	return (
+		<main className="px-10">
+			<Logo />
+			<AddPlant />
+			<SearchPlant />
+			<PlantList />
+		</main>
+	);
 }
 
 export default App;
