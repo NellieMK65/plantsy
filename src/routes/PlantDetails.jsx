@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 import { useEffect, useState } from 'react';
 import PlantCard from '../components/PlantCard';
 
+// worked on updating stock
+
 function PlantDetails() {
 	const [plant, setPlant] = useState();
 
